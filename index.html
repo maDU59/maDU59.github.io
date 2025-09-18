@@ -9,23 +9,23 @@
   </head>
 
   <body>
-    <header class="centered-category">
+    <header class="centered-category top-padding">
       <div class="flex flex-row border-box align-left">
-          <div class="border-box spacing w-70 m-w-70 top-padding">
-              <h1 style="font-family: Arial, Helvetica, sans-serif;">Hey, I'm maDU59_</h1>
-              <h2>I'm an indie developper in my spare time, you can find some of my work here.</h2>
+          <div class="border-box spacing w-70 m-w-70" style="margin-top: 60px">
+            <h1 style="font-family: Arial, Helvetica, sans-serif;" id="Title"></h1>
+            <h2 id="About me"></h2>
           </div>
-          <div class="border-box w-30 top-padding">
-              <img style="width:100%;border-radius: 50%;" src="images/pfp.png">
+          <div class="border-box w-30">
+              <img class = "fade-in" style="width:100%;border-radius: 50%;" src="images/pfp.png">
           </div>
       </div>
     </header>
 
     <section id="Android games" class="light-red">
-      <div class="centered-category top-padding"> 
-        <h1>My Android games:</h1>
+      <div class="centered-category top-padding" style="margin-top: 60px"> 
+        <h1 id=“android-games”>My Android games:</h1>
         <div class="horizontal-scroll flex flex-row align-left"> 
-          <div class="game-presentation-box">
+          <div class="game-presentation-box padding-top">
                 <a href="https://play.google.com/store/apps/details?id=com.maDU59.MiniDrift"><img class="game-icon hover-effect" src="https://play-lh.googleusercontent.com/3AQg2VUZIrMVMWJ68bilOTslXCbnK3uvih0E2LZIK6dMYSfQixktbcorRJkzJEskb0Iq=w480-h960-rw"></a>
                 <a href="https://play.google.com/store/apps/details?id=com.maDU59.MiniDrift"><h3 style="text-align: center;">Mini Drift</h3></a>
                 <p style="text-align: center;">Small Android drifting game made with Unity in C#</p>
@@ -41,7 +41,7 @@
 
     <section id="Minecraft mods" class="light-yellow">
       <div class="centered-category top-padding"> 
-        <h1>My Minecraft mods:</h1>
+        <h1 id=“minecraft-mods”>My Minecraft mods:</h1>
         <div class="horizontal-scroll flex flex-row"> 
           <div class="game-presentation-box">
                 <a href="https://modrinth.com/mod/ptp"><img class="game-icon hover-effect" src="https://raw.githubusercontent.com/maDU59/ProjectilesTrajectoryPreview/1.21/src/main/resources/assets/ptp/icon.png"></a>
@@ -61,7 +61,7 @@
 
     <section id="Scratch projects" class="light-blue">
       <div class="centered-category top-padding"> 
-        <h1>My Scratch projects:</h1>
+        <h1 id=“scratch-projects”>My Scratch projects:</h1>
         <div class="horizontal-scroll flex flex-row"> 
           <div class="game-presentation-box">
                 <iframe class="game-icon" src="https://turbowarp.org/805994032/embed" allowtransparency="true" frameborder="0" scrolling="no" allow="fullscreen"></iframe>
@@ -81,6 +81,28 @@
         </div>
       </div>
     </section>
+
+    <script>
+
+      function typeWriter(id, text, speed, callback) {
+        let i = 0;
+        function inner() {
+          if (i < text.length) {
+            document.getElementById(id).innerHTML += text.charAt(i);
+            i++;
+            setTimeout(inner, speed);
+          } else if (callback) {
+            callback(); // start next text when done
+          }
+        }
+        inner();
+      }
+
+      typeWriter("Title", "Hey, I'm maDU59_", 40, () => {
+          typeWriter("About me", "I'm an indie developer in my spare time, you can find some of my work here.", 12);
+        }
+      );
+    </script>
 
   </body>
 </html>

@@ -11,7 +11,8 @@ h1 {
 
 body {
   font-family: Arial, Helvetica, sans-serif;
-  margin: 0px
+  margin: 0px;
+  overflow-x: clip;
 }
 
 a {
@@ -21,6 +22,10 @@ a {
 
 a:hover {
   text-decoration: underline;
+}
+
+.shadow {
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
 }
 
 .spacing {
@@ -73,7 +78,7 @@ a:hover {
 }
 
 .light-blue {
-    background-color: #a2e2f2;
+    background-color: #afefff;
     color: black;
 }
 
@@ -146,4 +151,14 @@ a:hover {
 
 .top-padding{
     padding-top: 30px;
+}
+
+@keyframes fadeIn { from { opacity:0; transform: scale(1.5);} to { opacity:1; transform: scale(1);}}
+
+.fade-in {
+    opacity:0;
+    transform: scale(1.5);
+    animation:fadeIn ease-in 1;
+    animation-fill-mode:forwards;
+    animation-duration:0.2s;            
 }
