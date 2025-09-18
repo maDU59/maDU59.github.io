@@ -114,9 +114,14 @@ a {
     color: white;
 }
 
+.light-yellow {
+    background-color: #fffaa0;
+    color: rgb(0, 0, 0);
+}
+
 .light-red {
     background-color: #ff7a7a;
-    color: white;
+    color: rgb(0, 0, 0);
 }
 
 .red {
@@ -154,4 +159,10 @@ a {
 .game-icon{
     border-radius: 10%;
     width:100%
+}
+
+.links-field{
+    text-align: center;
+    color: gray;
+    font-size: 10px;
 }
