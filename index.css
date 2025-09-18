@@ -1,48 +1,121 @@
-.row {
-    display: flex; /* equal height of the children */
-    align-items: stretch;
-}
-
-.col-right {
-    flex: 1; /* additionally, equal width */
-    
-    padding: 1em;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: right;
-    /*border: solid;*/
-    height: 30vw;
-    max-height: 200px;
-}
-
-.col-left {
-    flex: 1; /* additionally, equal width */
-    
-    padding: 1em;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: left;
-    /*border: solid;*/
-    height: 30vw;
-    max-height: 200px;
-}
-
 body {
     padding-left: 10%;
     padding-right: 10%;
 }
 
 h1 {
-    font-size: 6vw;
+    font-size: 64px;
+    margin-bottom: 0;
+    margin-top: 0;
 }
 
-.pfp {
-    display: block;
-    width: 80%;
-    border-radius: 50%;
+.spacing {
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
+
+.margin-t-b {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+.padding-t-50 {
+    padding-top: 50px;
+}
+
+.padding-t-40 {
+    padding-top: 30px;
+}
+
+.padding-t-30 {
+    padding-top: 30px;
+}
+
+.m-w-70 {
+    max-width: 70rem;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.w-70 {
+    width: 70%;
+}
+
+.w-50 {
+    width: 50%;
+}
+
+.w-30 {
+    width: 30%;
+}
+
+.pad-l-r {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.pad-t-b {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.align-left {
+    text-align: left;
+}
+
+.center {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.black {
+    background-color: black;
+    color: white;
+}
+
+.white {
+    background-color: white;
+    color: black;
+}
+
+.blue {
+    background-color: #40A2E3;
+    color: white;
+}
+
+.light-blue {
+    background-color: #BBE2EC;
+    color: black;
+}
+
+.green {
+    background-color: #0D9276;
+    color: white;
+}
+
+.grey {
+    background-color: #2a3439;
+    color: white;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-row {
+    flex-direction: row;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.border-box {
+    box-sizing: border-box;
+}
+
 
 body {
   font-family: Arial, Helvetica, sans-serif;
