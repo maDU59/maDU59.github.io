@@ -1,12 +1,45 @@
 .row {
-  display: flex; /* equal height of the children */
-  align-items: stretch;
+    display: flex; /* equal height of the children */
+    align-items: stretch;
 }
 
-.col {
-  flex: 1; /* additionally, equal width */
-  
-  padding: 1em;
+.col-right {
+    flex: 1; /* additionally, equal width */
+    
+    padding: 1em;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    /*border: solid;*/
+    height: 30vw
+}
+
+.col-left {
+    flex: 1; /* additionally, equal width */
+    
+    padding: 1em;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    /*border: solid;*/
+    height: 30vw
+}
+
+body {
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+h1 {
+    font-size: 6vw;
+}
+
+.pfp {
+    display: block;
+    width: 80%;
+    border-radius: 50%;
 }
 
 body {
