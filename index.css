@@ -1,0 +1,15 @@
+.row {
+  display: flex; /* equal height of the children */
+  align-items: stretch;
+}
+
+.col {
+  flex: 1; /* additionally, equal width */
+  
+  padding: 1em;
+  border: solid;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
