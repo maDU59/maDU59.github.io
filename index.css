@@ -12,7 +12,8 @@
     align-items: center;
     justify-content: right;
     /*border: solid;*/
-    height: 30vw
+    height: 30vw;
+    max-height: 200px;
 }
 
 .col-left {
@@ -24,7 +25,8 @@
     align-items: center;
     justify-content: left;
     /*border: solid;*/
-    height: 30vw
+    height: 30vw;
+    max-height: 200px;
 }
 
 body {
