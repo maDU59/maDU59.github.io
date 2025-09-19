@@ -62,6 +62,7 @@
         </div>
         <button type="button" class="collapsible"><h2>More about my minecraft mods:</h2></button>
         <div class="content">
+          <p>Number of downloads: <span id="total-downloads">Loading...</span></p>
           <p><a class="obvious-link" href="https://modrinth.com/user/maDU59_">My Modrinth page</a></p>
           <p><a class="obvious-link" href="https://www.curseforge.com/members/madu59_">My Curseforge page</a></p>
         </div>
@@ -126,6 +127,26 @@
           }
         });
       }
+
+      async function getUserDownloads(username) {
+        const userModsUrl = `https://api.modrinth.com/v2/user/${encodeURIComponent(username)}/projects`;
+        const userResp = await fetch(userModsUrl);
+        const mods = await userResp.json(); // array of mod objects
+
+        let totalDownloads = 0;
+        for (const mod of mods) {
+          const modResp = await fetch(`https://api.modrinth.com/v2/project/${mod.id}`);
+          const modJson = await modResp.json();
+          totalDownloads += modJson.downloads;
+        }
+
+        return totalDownloads;
+      }
+
+      // usage
+      getUserDownloads("maDU59_").then(total => {
+        document.getElementById("total-downloads").textContent = total + " on Modrinth";
+      });
     </script>
 
   </body>
