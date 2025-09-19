@@ -21,7 +21,7 @@
       </div>
     </header>
 
-    <section id="Android games" class="light-red">
+    <section id="Android games" class="light-red bottom-padding">
       <div class="centered-category top-padding" style="margin-top: 60px"> 
         <h1 id=“android-games”>My Android games:</h1>
         <div class="horizontal-scroll flex flex-row align-left"> 
@@ -36,10 +36,14 @@
                 <p style="text-align: center;">Small WearOs game made with Android Studio in Java</p>
           </div>
         </div>
+        <button type="button" class="collapsible"><h2>More about my android games:</h2></button>
+        <div class="content">
+          <p><a class="obvious-link" href="https://play.google.com/store/apps/dev?id=8504354424409738389">My Play Store developper's page</a></p>
+        </div>
       </div>
     </section>
 
-    <section id="Minecraft mods" class="light-yellow">
+    <section id="Minecraft mods" class="light-yellow bottom-padding">
       <div class="centered-category top-padding"> 
         <h1 id=“minecraft-mods”>My Minecraft mods:</h1>
         <div class="horizontal-scroll flex flex-row"> 
@@ -55,6 +59,11 @@
             <p style="text-align: center;">Utility and QOL mod</p>
             <p class = "links-field"><a href="https://modrinth.com/mod/better-compass-hud">Modrinth</a> | <a href="https://www.curseforge.com/minecraft/mc-mods/better-compass-hud">CurseForge</a> | <a href="https://github.com/maDU59/BetterCompass">Github</a></p>
           </div>
+        </div>
+        <button type="button" class="collapsible"><h2>More about my minecraft mods:</h2></button>
+        <div class="content">
+          <p><a class="obvious-link" href="https://modrinth.com/user/maDU59_">My Modrinth page</a></p>
+          <p><a class="obvious-link" href="https://www.curseforge.com/members/madu59_">My Curseforge page</a></p>
         </div>
       </div>
     </section>
@@ -102,6 +111,21 @@
           typeWriter("About me", "I'm an indie developer in my spare time, you can find some of my work here.", 12);
         }
       );
+
+      var coll = document.getElementsByClassName("collapsible");
+      var i;
+
+      for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function() {
+          this.classList.toggle("active");
+          var content = this.nextElementSibling;
+          if (content.style.maxHeight){
+            content.style.maxHeight = null;
+          } else {
+            content.style.maxHeight = content.scrollHeight + "px";
+          }
+        });
+      }
     </script>
 
   </body>

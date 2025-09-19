@@ -29,6 +29,16 @@ a:hover {
   text-decoration: underline;
 }
 
+.obvious-link{
+    color: gray;
+}
+
+.links-field{
+    text-align: center;
+    color: gray;
+    font-size: 10px;
+}
+
 .shadow {
     box-shadow: 0 0 20px rgba(0,0,0,0.5);
 }
@@ -146,22 +156,69 @@ a:hover {
     width:100%
 }
 
-.links-field{
-    text-align: center;
-    color: gray;
-    font-size: 10px;
-}
-
 .top-padding{
     padding-top: 30px;
+}
+
+.bottom-padding{
+    padding-bottom: 30px;
 }
 
 @keyframes fadeIn { from { opacity:0; transform: scale(1.5);} to { opacity:1; transform: scale(1);}}
 
 .fade-in {
     opacity:0;
-    transform: scale(1.5);
+    transform:scale(1.5);
     animation:fadeIn ease-in 1;
     animation-fill-mode:forwards;
     animation-duration:0.2s;            
+}
+
+.collapsible {
+  background-color: rgba(0,0,0,0.05);
+  color: inherit;
+  cursor: pointer;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  border-radius: 1vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: border-bottom-left-radius 0.2s ease-out, border-bottom-right-radius 0.2s ease-out;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active {
+  background-color: rgba(0,0,0,0.1);
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.collapsible:hover {
+  background-color: rgba(0,0,0,0.2);
+}
+
+/* Style the collapsible content. Note: hidden by default */
+.content {
+  padding: 0 18px;
+  background-color: rgba(0,0,0,0.05);
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  border-bottom-left-radius: 1vh;
+  border-bottom-right-radius: 1vh;
+}
+
+.collapsible:after {
+  content: '\02795'; /* Unicode character for "plus" sign (+) */
+  font-size: 16px;
+  color: inherit;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2796"; /* Unicode character for "minus" sign (-) */
 }
