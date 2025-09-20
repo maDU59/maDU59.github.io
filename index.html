@@ -6,6 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="index.css">
+    <link rel="icon" href="images/pfp.png">
   </head>
 
   <body>
@@ -144,8 +145,8 @@
       }
 
       // usage
-      getUserDownloads("maDU59_").then(total => {
-        document.getElementById("total-downloads").textContent = total + " on Modrinth";
+      getUserDownloads("maDU59_").then(modrinthTotal => {
+        document.getElementById("total-downloads").textContent = modrinthTotal + " on Modrinth";
       });
     </script>
 
