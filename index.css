@@ -233,6 +233,7 @@ h1{
 .tile-icon{
     width: auto;
     height: 100%;
+    border-radius: 5px;
 }
 
 .tile-name{
