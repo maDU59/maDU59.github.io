@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <title>maDU59_'s website</title>
+        <meta charset="UTF-8">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../index.css">
+        <link rel="icon" href="../images/pfp.png">
+    </head>
+
+    <body>
+        <div class = background>
+            <div class="container">
+                <div class="background-img img1"></div>
+                <div class="background-img img2"></div>
+                <div class="background-img img3"></div>
+            </div>
+            <div class="vignette"></div>
+        </div>
+        <div class = "header-container", id = "header-container">
+
+        </div>
+        <div class="title underlined">
+            <h1>My advanced Scratch projects:</h1>
+        </div>
+        <div class = tiles-container id="tiles-container">
+            
+        </div>
+    </body>
+    <script>
+        const container = document.getElementById("tiles-container");
+
+        fetch("../tiles.json")
+        .then(response => response.json())
+        .then(data => {
+            data.forEach(tile => {
+                if(tile.type === "scratch"){
+                    if(tile.contentImage === "None"){
+                        image = ""
+                    }
+                    else{
+                        image = `<iframe class="tile-content-image" src="${tile.contentImage}embed" allowtransparency="true" frameborder="0" scrolling="no" allow=""></iframe>`
+                    }
+                    container.insertAdjacentHTML("beforeend", `
+                        <div class="tile">
+                            <div class="tile-title">
+                                <a href = "${tile.mainLink}"><img class="tile-icon" src="${tile.icon}"></a>
+                                <a href = "${tile.mainLink}" class="tile-name">${tile.name}</a>
+                            </div>
+                            <div class="tile-content">
+                                <p class="tile-content-text">${tile.contentText}</p>
+                                ${image}
+                            </div>
+                        </div>
+                    `);
+                }
+            });
+        })
+        .catch(error => console.error("Error loading JSON:", error));
+
+        fetch("../Header/header.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("header-container").innerHTML = data;
+            })
+            .catch(err => console.error("Failed to load header:", err));
+    </script>
+</html>
