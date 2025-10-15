@@ -45,6 +45,7 @@
                     else{
                         image = `<iframe class="tile-content-image" src="${tile.contentImage}embed" allowtransparency="true" frameborder="0" scrolling="no" allow=""></iframe>`
                     }
+                    links = tile.links.map(link => `<a href="${link.url}" class="tile-link">${link.name}</a>`).join(" | ");
                     container.insertAdjacentHTML("beforeend", `
                         <div class="tile">
                             <div class="tile-title">
@@ -55,6 +56,7 @@
                                 <p class="tile-content-text">${tile.contentText}</p>
                                 ${image}
                             </div>
+                            <p class = "tile-links">${links}</p>
                         </div>
                     `);
                 }
