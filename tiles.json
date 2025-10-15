@@ -53,7 +53,7 @@
     "icon": "",
     "contentText": "This project tries to recreate a barebone version of Minecraft using rasterization. Unlike most other Minecraft 3D projects on Scratch, it's not raycasting, so it supports entities and it's textured.",
     "contentImage": "https://turbowarp.org/805994032/",
-    "mainLink":"https://turbowarp.org/805994032/"
+    "mainLink":"https://turbowarp.org/805994032/fullscreen"
   },
   {
     "type": "scratch",
@@ -61,7 +61,7 @@
     "icon": "",
     "contentText": "This project is a 3D engine. You can import .obj files (from inside the code) and move everything how you want. It relies on Painter's algorithm and supports some great graphic features such as flat shading and multiple lights.",
     "contentImage": "https://turbowarp.org/753555952/",
-    "mainLink":"https://turbowarp.org/753555952/"
+    "mainLink":"https://turbowarp.org/753555952/fullscreen"
   },
   {
     "type": "scratch",
@@ -69,6 +69,6 @@
     "icon": "",
     "contentText": "Raytracing is a well known features to get realistic lightning in modern video games, this is pathtracing, even more realistic, but at the cost of speed.",
     "contentImage": "https://turbowarp.org/839012270/",
-    "mainLink":"https://turbowarp.org/839012270/"
+    "mainLink":"https://turbowarp.org/839012270/fullscreen"
   }
 ]
