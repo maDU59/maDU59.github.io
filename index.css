@@ -155,7 +155,7 @@ h1{
 }
 
 .header-button:hover{
-    box-shadow: inset 0 4px 8px rgba(0,0,0,0.3);
+    box-shadow: inset 0 0 16px rgba(0, 0, 0, 0.3);
 }
 
 .title{

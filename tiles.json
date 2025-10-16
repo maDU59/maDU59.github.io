@@ -17,7 +17,7 @@
     "name": "Fresh Loot Highlight",
     "icon": "https://raw.githubusercontent.com/maDU59/FreshLootHighlight/main/src/main/resources/assets/fresh-loot-highlight/icon.png",
     "contentText": "Fresh Loot Highlight is a mod that tells you what items you've picked up and highlights them in the inventory.",
-    "contentImage": "None",
+    "contentImage": "../images/flh.webp",
     "mainLink":"https://modrinth.com/mod/fresh-loot-highlight",
     "links": [
         {"name": "Modrinth", "url": "https://modrinth.com/mod/fresh-loot-highlight"},
@@ -29,8 +29,8 @@
     "type": "minecraft-mod",
     "name": "Better Compass",
     "icon": "https://raw.githubusercontent.com/maDU59/BetterCompass/main/src/main/resources/assets/better-compass/icon.png",
-    "contentText": "Better Compass adds a vanilla-style compass ribon to the HUD. It can even show the direction to your last death's location",
-    "contentImage": "None",
+    "contentText": "Better Compass adds a vanilla-style compass ribon to the HUD. It can even show the direction to your last death's location.",
+    "contentImage": "../images/better-compass.png",
     "mainLink":"https://modrinth.com/mod/better-compass-hud",
     "links": [
         {"name": "Modrinth", "url": "https://modrinth.com/mod/better-compass-hud"},
@@ -43,7 +43,7 @@
     "name": "Banner Hats",
     "icon": "https://raw.githubusercontent.com/maDU59/BannerHats/main/src/main/resources/assets/banner_hats/icon.png",
     "contentText": "Banner Hats lets you equip banner in the helmet slot, just like pillagers do.",
-    "contentImage": "None",
+    "contentImage": "../images/banner-hats.png",
     "mainLink":"https://modrinth.com/mod/banner-hats",
     "links": [
         {"name": "Modrinth", "url": "https://modrinth.com/mod/banner-hats"},
