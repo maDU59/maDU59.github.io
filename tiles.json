@@ -51,6 +51,32 @@
     ]
   },
   {
+    "type": "minecraft-mod",
+    "name": "ClientSide Commands",
+    "icon": "https://raw.githubusercontent.com/maDU59/ClientSideCommands/main/src/main/resources/assets/clientsidecommands/icon.png",
+    "contentText": "ClientSide Commands is a mod that adds some client-side useful commands, such as /calc to calculate, /wiki to open the wiki page of the in-hand item and /copy pos to copy your current position to the clipboard.",
+    "contentImage": "../images/clientsidecommands.webp",
+    "mainLink":"https://modrinth.com/mod/clientside-commands",
+    "links": [
+        {"name": "Modrinth", "url": "https://modrinth.com/mod/client-side-commands"},
+        {"name": "CurseForge", "url": "https://www.curseforge.com/minecraft/mc-mods/clientside-commands"},
+        {"name": "GitHub", "url": "https://github.com/maDU59/BannerHats"}
+    ]
+  },
+  {
+    "type": "minecraft-mod",
+    "name": "Emojis",
+    "icon": "https://raw.githubusercontent.com/maDU59/Emojis/main/src/main/resources/assets/emojis/icon.png",
+    "contentText": "Emojis allows you to type emojis in chat using :emoji_name: syntax. It comes with a lot of built-in emojis and you can even add your own! It also supports resource packs and custom fonts.",
+    "contentImage": "../images/emojis.png",
+    "mainLink":"https://modrinth.com/mod/emojis",
+    "links": [
+        {"name": "Modrinth", "url": "https://modrinth.com/mod/emojis"},
+        {"name": "CurseForge", "url": "https://www.curseforge.com/minecraft/mc-mods/emojis"},
+        {"name": "GitHub", "url": "https://github.com/maDU59/Emojis"}
+    ]
+  },
+  {
     "type": "play-store-game",
     "name": "Mini Drift",
     "icon": "https://play-lh.googleusercontent.com/3AQg2VUZIrMVMWJ68bilOTslXCbnK3uvih0E2LZIK6dMYSfQixktbcorRJkzJEskb0Iq=w480-h960-rw",
