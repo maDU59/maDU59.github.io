@@ -22,7 +22,7 @@
             </div>
             <div class="vignette"></div>
         </div>
-        <div class = "header-container", id = "header-container">
+        <div class = "header-container" id = "header-container">
 
         </div>
         <div class="main">
@@ -34,14 +34,13 @@
             </div>
         </div>
         <p class = "footer"><a class = "tile-link" href = "https://www.youtube.com/@maDU59_">Youtube</a> | <a class = "tile-link" href = "https://www.tiktok.com/@madu59_">TikTok</a> | <a class = "tile-link" href = "https://www.instagram.com/madudev_/">Instagram</a> | <a class = "tile-link" href = "https://discord.com/users/809521544706654208">Discord</a></p>
+        <script>
+        fetch("./Header/header.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("header-container").innerHTML = data;
+            })
+            .catch(err => console.error("Failed to load header:", err));
+        </script>
     </body>
-
-    <script>
-    fetch("./Header/header.html")
-        .then(response => response.text())
-        .then(data => {
-            document.getElementById("header-container").innerHTML = data;
-        })
-        .catch(err => console.error("Failed to load header:", err));
-    </script>
 </html>

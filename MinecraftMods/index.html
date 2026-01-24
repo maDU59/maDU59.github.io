@@ -22,7 +22,7 @@
             </div>
             <div class="vignette"></div>
         </div>
-        <div class = "header-container", id = "header-container">
+        <div class = "header-container" id = "header-container">
 
         </div>
         <div class="title underlined">
@@ -31,45 +31,45 @@
         <div class = tiles-container id="tiles-container">
             
         </div>
+        <script>
+            const container = document.getElementById("tiles-container");
+
+            fetch("../tiles.json")
+            .then(response => response.json())
+            .then(data => {
+                data.forEach(tile => {
+                    if(tile.type === "minecraft-mod"){
+                        if(tile.contentImage === "None"){
+                            image = ""
+                        }
+                        else{
+                            image = `<img class="tile-content-image" src="${tile.contentImage}"">`
+                        }
+                        links = tile.links.map(link => `<a href="${link.url}" class="tile-link">${link.name}</a>`).join(" | ");
+                        container.insertAdjacentHTML("beforeend", `
+                            <div class="tile">
+                                <div class="tile-title">
+                                    <a href = "${tile.mainLink}" class="tile-icon"><img class="tile-icon" src="${tile.icon}"></a>
+                                    <a href = "${tile.mainLink}" class="tile-name">${tile.name}</a>
+                                </div>
+                                <div class="tile-content">
+                                    <p class="tile-content-text">${tile.contentText}</p>
+                                    ${image}
+                                </div>
+                                <p class = "tile-links">${links}</p>
+                            </div>
+                        `);
+                    }
+                });
+            })
+            .catch(error => console.error("Error loading JSON:", error));
+
+            fetch("../Header/header.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("header-container").innerHTML = data;
+            })
+            .catch(err => console.error("Failed to load header:", err));
+        </script>
     </body>
-    <script>
-        const container = document.getElementById("tiles-container");
-
-        fetch("../tiles.json")
-        .then(response => response.json())
-        .then(data => {
-            data.forEach(tile => {
-                if(tile.type === "minecraft-mod"){
-                    if(tile.contentImage === "None"){
-                        image = ""
-                    }
-                    else{
-                        image = `<img class="tile-content-image" src="${tile.contentImage}"">`
-                    }
-                    links = tile.links.map(link => `<a href="${link.url}" class="tile-link">${link.name}</a>`).join(" | ");
-                    container.insertAdjacentHTML("beforeend", `
-                        <div class="tile">
-                            <div class="tile-title">
-                                <a href = "${tile.mainLink}" class="tile-icon"><img class="tile-icon" src="${tile.icon}"></a>
-                                <a href = "${tile.mainLink}" class="tile-name">${tile.name}</a>
-                            </div>
-                            <div class="tile-content">
-                                <p class="tile-content-text">${tile.contentText}</p>
-                                ${image}
-                            </div>
-                            <p class = "tile-links">${links}</p>
-                        </div>
-                    `);
-                }
-            });
-        })
-        .catch(error => console.error("Error loading JSON:", error));
-
-        fetch("../Header/header.html")
-        .then(response => response.text())
-        .then(data => {
-            document.getElementById("header-container").innerHTML = data;
-        })
-        .catch(err => console.error("Failed to load header:", err));
-    </script>
 </html>
