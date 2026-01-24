@@ -10,7 +10,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name=”color-scheme” content="light dark">
         <link rel="stylesheet" href="index.css">
-        <link rel="icon" href="images/pfp.png">
+        <link rel="icon" href="./images/pfp.png">
     </head>
 
     <body>
@@ -33,10 +33,11 @@
                 <a href="Scratch/"><img class="icon" src="images/scratch.svg"></a>
             </div>
         </div>
+        <p class = "footer"><a class = "tile-link" href = "https://www.youtube.com/@maDU59_">Youtube</a> | <a class = "tile-link" href = "https://www.tiktok.com/@madu59_">TikTok</a> | <a class = "tile-link" href = "https://www.instagram.com/madudev_/">Instagram</a> | <a class = "tile-link" href = "https://discord.com/users/809521544706654208">Discord</a></p>
     </body>
 
     <script>
-    fetch("Header/header.html")
+    fetch("./Header/header.html")
         .then(response => response.text())
         .then(data => {
             document.getElementById("header-container").innerHTML = data;

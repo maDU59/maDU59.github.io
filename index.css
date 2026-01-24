@@ -150,6 +150,15 @@ h1{
     gap: 50px;
 }
 
+.footer{
+    position: absolute;
+    z-index: 5;
+    width: 100%;
+    bottom:0%;
+    color: var(--text-color);
+    text-align: center;
+}
+
 .header-right{
     height: 100%;
     margin-left: auto;
@@ -194,19 +203,19 @@ h1{
 
 .img1{
     background-position: left;
-    background-image: url('../images/code.png');
+    background-image: url('./images/code.png');
     clip-path: polygon(0 0, 100% 0, 85% 100%, 0% 100%);
 }
 
 .img2{
     background-position: center;
-    background-image: url('../images/mini-drift.png');
+    background-image: url('./images/mini-drift.png');
     clip-path: polygon(15% 0, 100% 0, 85% 100%, 0% 100%);
 }
 
 .img3{
     background-position: 74%;
-    background-image: url('../images/minecraft.png');
+    background-image: url('./images/minecraft.png');
     clip-path: polygon(15% 0, 100% 0, 100% 100%, 0% 100%);
 }
 
@@ -220,7 +229,7 @@ h1{
         flex: 100vw;
         width: 100vw;
         background-position: center;
-        background-image: url('../images/mini-drift.png');
+        background-image: url('./images/mini-drift.png');
         clip-path: none;
     }
     
