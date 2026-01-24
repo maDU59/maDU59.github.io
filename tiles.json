@@ -4,7 +4,7 @@
     "name": "Projectile Trajectory Preview",
     "icon": "https://raw.githubusercontent.com/maDU59/ProjectilesTrajectoryPreview/1.21/src/main/resources/assets/ptp/icon.png",
     "contentText": "Projectiles Trajectory Preview is a mod that lets you see where your projectiles are gonna land. It works for all vanilla-projectiles such as arrows, ender pearls, snowballs and tridents.",
-    "contentImage": "../images/minecraft.png",
+    "contentImage": "../images/ptp.gif",
     "mainLink":"https://modrinth.com/mod/ptp",
     "links": [
         {"name": "Modrinth", "url": "https://modrinth.com/mod/ptp"},
