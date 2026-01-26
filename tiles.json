@@ -27,6 +27,32 @@
   },
   {
     "type": "minecraft-mod",
+    "name": "Emojis",
+    "icon": "https://raw.githubusercontent.com/maDU59/Emojis/main/src/main/resources/assets/emojis/icon.png",
+    "contentText": "Emojis allows you to type emojis in chat using :emoji_name: syntax. It comes with a lot of built-in emojis and you can even add your own! It also supports resource packs and custom fonts.",
+    "contentImage": "../images/emojis.png",
+    "mainLink":"https://modrinth.com/mod/emojis",
+    "links": [
+        {"name": "Modrinth", "url": "https://modrinth.com/mod/emojis"},
+        {"name": "CurseForge", "url": "https://www.curseforge.com/minecraft/mc-mods/emojis"},
+        {"name": "GitHub", "url": "https://github.com/maDU59/Emojis"}
+    ]
+  },
+  {
+    "type": "minecraft-mod",
+    "name": "Dynamic HUD",
+    "icon": "https://raw.githubusercontent.com/maDU59/DynamicHud/refs/heads/1.21/src/main/resources/assets/dynamichud/icon.png",
+    "contentText": "Dynamic Hud is a mod that hides elements of the hud when they are not needed to reduce screen bloating and OLED burn-in. Every modern games does the same, it hides you're health bar when it's full and there are no ennemies etc...",
+    "embed": "https://youtube.com/embed/T3YjpnSwV5M",
+    "mainLink":"https://modrinth.com/mod/dynamic-hud",
+    "links": [
+        {"name": "Modrinth", "url": "https://modrinth.com/mod/dynamic-hud"},
+        {"name": "CurseForge", "url": "https://www.curseforge.com/minecraft/mc-mods/dynamic-hud"},
+        {"name": "GitHub", "url": "https://github.com/maDU59/DynamicHud"}
+    ]
+  },
+  {
+    "type": "minecraft-mod",
     "name": "Better Compass",
     "icon": "https://raw.githubusercontent.com/maDU59/BetterCompass/main/src/main/resources/assets/better-compass/icon.png",
     "contentText": "Better Compass adds a vanilla-style compass ribon to the HUD. It can even show the direction to your last death's location.",
@@ -61,19 +87,6 @@
         {"name": "Modrinth", "url": "https://modrinth.com/mod/client-side-commands"},
         {"name": "CurseForge", "url": "https://www.curseforge.com/minecraft/mc-mods/clientside-commands"},
         {"name": "GitHub", "url": "https://github.com/maDU59/BannerHats"}
-    ]
-  },
-  {
-    "type": "minecraft-mod",
-    "name": "Emojis",
-    "icon": "https://raw.githubusercontent.com/maDU59/Emojis/main/src/main/resources/assets/emojis/icon.png",
-    "contentText": "Emojis allows you to type emojis in chat using :emoji_name: syntax. It comes with a lot of built-in emojis and you can even add your own! It also supports resource packs and custom fonts.",
-    "contentImage": "../images/emojis.png",
-    "mainLink":"https://modrinth.com/mod/emojis",
-    "links": [
-        {"name": "Modrinth", "url": "https://modrinth.com/mod/emojis"},
-        {"name": "CurseForge", "url": "https://www.curseforge.com/minecraft/mc-mods/emojis"},
-        {"name": "GitHub", "url": "https://github.com/maDU59/Emojis"}
     ]
   },
   {

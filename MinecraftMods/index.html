@@ -39,11 +39,17 @@
             .then(data => {
                 data.forEach(tile => {
                     if(tile.type === "minecraft-mod"){
-                        if(tile.contentImage === "None"){
+                        if(!("contentImage" in tile) || tile.contentImage === "None"){
                             image = ""
                         }
                         else{
                             image = `<img class="tile-content-image" src="${tile.contentImage}"">`
+                        }
+                        if(!("embed" in tile) || tile.embed === "None"){
+                            embed = ""
+                        }
+                        else{
+                            embed = `<iframe class="tile-content-image" width="560" height="270" frameborder="0" src="${tile.embed}" allowfullscreen></iframe>`
                         }
                         links = tile.links.map(link => `<a href="${link.url}" class="tile-link">${link.name}</a>`).join(" | ");
                         container.insertAdjacentHTML("beforeend", `
@@ -55,6 +61,7 @@
                                 <div class="tile-content">
                                     <p class="tile-content-text">${tile.contentText}</p>
                                     ${image}
+                                    ${embed}
                                 </div>
                                 <p class = "tile-links">${links}</p>
                             </div>
