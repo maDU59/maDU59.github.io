@@ -27,6 +27,19 @@
   },
   {
     "type": "minecraft-mod",
+    "name": "Fancy World Animations",
+    "icon": "https://raw.githubusercontent.com/maDU59/FancyWorldAnimations/main/src/main/resources/assets/fwa/icon.png",
+    "contentText": "Adds a animations on player interaction to a bunch of blocks!",
+    "contentImage": "../images/fwa.gif",
+    "mainLink":"https://modrinth.com/mod/fwa",
+    "links": [
+        {"name": "Modrinth", "url": "https://modrinth.com/mod/fwa"},
+        {"name": "CurseForge", "url": "https://www.curseforge.com/minecraft/mc-mods/fwa"},
+        {"name": "GitHub", "url": "https://github.com/maDU59/https://github.com/maDU59/FancyWorldAnimations"}
+    ]
+  },
+  {
+    "type": "minecraft-mod",
     "name": "Emojis",
     "icon": "https://raw.githubusercontent.com/maDU59/Emojis/main/src/main/resources/assets/emojis/icon.png",
     "contentText": "Emojis allows you to type emojis in chat using :emoji_name: syntax. It comes with a lot of built-in emojis and you can even add your own! It also supports resource packs and custom fonts.",
